@@ -20,18 +20,31 @@ Built with a **React frontend** and a **Python (FastAPI) backend**, this project
 
 ### 🔹 1. Run the Backend (FastAPI)
 🧱 Step 1: Go to backend folder
+
+```
 cd backend
+```
+
 
 🧱 Step 2: Create and activate virtual environment (optional but recommended)
+
+```
 python3 -m venv venv
+
 source venv/bin/activate  # Mac/Linux
+
 source venv\Scripts\activate     # Windows
+```
 
 🧱 Step 3: Install dependencies
+```
 pip install -r requirements.txt
+```
 
 🧱 Step 4: Run the backend server
+```
 uvicorn app.main:app --reload
+```
 
 Your backend will start at 👉 http://127.0.0.1:8000
 
@@ -40,29 +53,32 @@ Swagger Docs: http://127.0.0.1:8000/docs
 
 ### 🔹 2. Run the Frontend (React + Vite)
 🪄 Step 1: Go to frontend folder
-cd ../frontend
-
+```
+cd /frontend
+```
 🪄 Step 2: Install dependencies
+```
 npm install
-
+```
 🪄 Step 3: Start the frontend app
+```
 npm run dev
-
+```
 Your frontend will run at 👉 http://localhost:5173
 
 ### 🧩 3. Running the Complete Project
 
 Start the backend first:
-
+```
 cd backend
 uvicorn app.main:app --reload
-
+```
 
 Then start the frontend:
-
-cd ../frontend
+```
+cd /frontend
 npm run dev
-
+```
 
 Open your browser and go to
 👉 http://localhost:5173
